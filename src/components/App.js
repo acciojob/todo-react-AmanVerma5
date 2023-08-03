@@ -26,6 +26,7 @@ const App = () => {
         <h1>To-D0 List</h1>
         <input type="text" value={newTodo} onChange={(e)=>setNewTodo(e.target.value)}  />
         <button onClick={addTodo}>Add Todo</button>
+        <ul>
         {
           todos.map((element,index)=>(
             <li key={index}>
@@ -34,6 +35,7 @@ const App = () => {
             </li>
           ))
         }
+        </ul>
     </div>
   )
 }
